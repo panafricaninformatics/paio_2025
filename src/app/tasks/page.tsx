@@ -1,6 +1,6 @@
 // src/app/tasks/page.tsx
 import React from "react";
-import { Download, ExternalLink } from "lucide-react";
+import { Download, ExternalLink, Github } from "lucide-react";
 
 // PAIO Contest data (moved from resources)
 const paioContestData = {
@@ -65,6 +65,15 @@ function PAIOContestCard({ contest }: { contest: typeof paioContestData }) {
     <div className="bg-white rounded-lg border p-6">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-xl font-bold text-gray-800">PAIO {contest.year}</h3>
+        <a
+          href="https://github.com/pafricanio/paio-2025-public"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-4 py-2 bg-amber-600 text-white rounded-md hover:bg-amber-700 transition-colors"
+        >
+          <Github size={16} />
+          Tasks Data
+        </a>
         {/* {contest.livePracticeUrl && (
           <a
             href={contest.livePracticeUrl}

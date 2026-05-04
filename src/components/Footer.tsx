@@ -10,6 +10,7 @@ import {
   Twitter,
   Facebook,
   Instagram,
+  Github,
 } from "lucide-react";
 
 // Pull in the same navigation items defined in Navbar
@@ -148,6 +149,20 @@ const Footer = () => {
                 <span className="text-gray-600 text-sm">
                   Kigali, Rwanda
                 </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Github
+                  size={16}
+                  className="text-gray-400 mt-1 flex-shrink-0"
+                />
+                <a
+                  href="https://github.com/pafricanio"
+                  className="text-gray-600 hover:text-amber-700 text-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
               </li>
             </ul>
           </motion.div>
