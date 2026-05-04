@@ -29,7 +29,7 @@ const Typography: React.FC<TypographyProps> = ({
     ? 'bg-gradient-to-r from-amber-700 to-green-600 text-transparent bg-clip-text'
     : '';
 
-  const Component = variant.startsWith('h') ? variant as keyof JSX.IntrinsicElements : 'p';
+  const Component = variant.startsWith('h') ? (variant as keyof React.JSX.IntrinsicElements) : 'p';
 
   return (
     <Component 
